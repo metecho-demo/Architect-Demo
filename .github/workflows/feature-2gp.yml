@@ -11,3 +11,4 @@ jobs:
         secrets:
             dev-hub-auth-url: "${{ secrets.DEV_HUB_AUTH_URL }}"
             gh-email: "${{ secrets.gh_email }}"
+            github-token: "${{ secrets.github_token }}
