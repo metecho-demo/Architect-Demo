@@ -8,11 +8,10 @@ jobs:
         name: "Feature Test 2GP"
         runs-on: ubuntu-latest
         container:
-            image: ghcr.io/metecho-demo/d2x:latest
-            options: --user root
+            image: ghcr.io/muselab-d2x/d2x:latest
             credentials:
                 username: ${{ github.actor }}
-                password: ${{ secrets.GHCR_TOKEN }}
+                password: ${{ secrets.GITHUB_TOKEN }}
             env:
                 DEV_HUB_AUTH_URL: "${{ secrets.DEV_HUB_AUTH_URL }}"
                 CUMULUSCI_SERVICE_github: "{ \"username\": \"${{ github.actor }}\", \"token\": \"${{ secrets.GITHUB_TOKEN }}\", \"email\": \"${{ secrets.GH_EMAIL }}\" }"
