@@ -10,5 +10,5 @@ jobs:
         uses: muselab-d2x/d2x/.github/workflows/2gp-feature-test.yml@main
         secrets:
             dev-hub-auth-url: "${{ secrets.DEV_HUB_AUTH_URL }}"
-            gh-email: "${{ secrets.gh_email }}"
-            github-token: "${{ secrets.github_token }}"
+            gh-email: "${{ secrets.GH_EMAIL }}"
+            github-token: "${{ secrets.GITHUB_TOKEN }}"
